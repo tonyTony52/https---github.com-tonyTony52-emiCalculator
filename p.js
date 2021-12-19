@@ -6,7 +6,8 @@ let resultText=document.getElementById("resultText");
 function validInput(loanAmount,interestRate,tenure){
     if (((loanAmount<11,00,000) || (loanAmount>5,00,00,0000)) ||((interestRate<7)||(interestRate>14)) || ((tenure<12) || (tenure>300))){
         resultText.value="Please enter Valid Input";
-        emiAmount.value=null;
+        emiAmount.value='Please Enter valid Input';
+        emiAmount.style.color("red");
     }
     else{
         resultText.value="Done!";
